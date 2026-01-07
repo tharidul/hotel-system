@@ -10,15 +10,15 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="live.lkml.controller.LoginFormController">
+<AnchorPane fx:id="context" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="live.lkml.controller.LoginFormController">
    <children>
       <Label layoutX="13.0" layoutY="20.0" prefHeight="106.0" prefWidth="333.0" text="Welcome Back ! Glad to see you , Again !" wrapText="true">
          <font>
             <Font name="Arial Bold" size="30.0" />
          </font>
       </Label>
-      <TextField layoutX="13.0" layoutY="148.0" prefHeight="40.0" prefWidth="334.0" promptText="Enter Your Email" />
-      <TextField layoutX="13.0" layoutY="206.0" prefHeight="40.0" prefWidth="334.0" promptText="Enter Your Password" />
+      <TextField fx:id="txtEmail" layoutX="13.0" layoutY="148.0" prefHeight="40.0" prefWidth="334.0" promptText="Enter Your Email" />
+      <TextField fx:id="txtPassword" layoutX="13.0" layoutY="206.0" prefHeight="40.0" prefWidth="334.0" promptText="Enter Your Password" />
       <ImageView fitHeight="22.0" fitWidth="24.0" layoutX="321.0" layoutY="215.0" opacity="0.51" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/eye.png" />
@@ -29,13 +29,13 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Hyperlink>
-      <Button layoutX="14.0" layoutY="300.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="334.0" style="-fx-background-color: #2980b9; -fx-border-radius: 4;" text="Login" textFill="WHITE">
+      <Button layoutX="14.0" layoutY="300.0" mnemonicParsing="false" onAction="#loginOnAction" prefHeight="40.0" prefWidth="334.0" style="-fx-background-color: #2980b9; -fx-border-radius: 4;" text="Login" textFill="WHITE">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Button>
       <Label layoutX="170.0" layoutY="359.0" text="OR" textFill="#818080" />
-      <Button layoutX="12.0" layoutY="390.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="334.0" style="-fx-border-color: #1e272e; -fx-background-color: #ffff; -fx-border-radius: 4;" text="Back to home">
+      <Button layoutX="12.0" layoutY="390.0" mnemonicParsing="false" onAction="#backToHomeOnAction" prefHeight="40.0" prefWidth="334.0" style="-fx-border-color: #1e272e; -fx-background-color: #ffff; -fx-border-radius: 4;" text="Back to home">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
