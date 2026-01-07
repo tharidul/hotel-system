@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="live.lkml.controller.LoginFormController">
+   <children>
+      <Label layoutX="13.0" layoutY="20.0" prefHeight="106.0" prefWidth="333.0" text="Welcome Back ! Glad to see you , Again !" wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font>
+      </Label>
+      <TextField layoutX="13.0" layoutY="148.0" prefHeight="40.0" prefWidth="334.0" promptText="Enter Your Email" />
+      <TextField layoutX="13.0" layoutY="206.0" prefHeight="40.0" prefWidth="334.0" promptText="Enter Your Password" />
+      <ImageView fitHeight="22.0" fitWidth="24.0" layoutX="321.0" layoutY="215.0" opacity="0.51" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/eye.png" />
+         </image>
+      </ImageView>
+      <Hyperlink layoutX="234.0" layoutY="261.0" prefHeight="26.0" prefWidth="113.0" text="Forgot password" underline="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Hyperlink>
+      <Button layoutX="14.0" layoutY="300.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="334.0" style="-fx-background-color: #2980b9; -fx-border-radius: 4;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="170.0" layoutY="359.0" text="OR" textFill="#818080" />
+      <Button layoutX="12.0" layoutY="390.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="334.0" style="-fx-border-color: #1e272e; -fx-background-color: #ffff; -fx-border-radius: 4;" text="Back to home">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
